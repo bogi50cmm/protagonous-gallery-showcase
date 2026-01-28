@@ -48,7 +48,7 @@ const galleryItems: GalleryItem[] = [
   { src: beforeAfter1, title: "Pre i posle - Krov", category: "Krovovi" },
   { src: galleryFloor1, title: "Industrijski pod - Garaža", category: "Podovi" },
   { src: galleryFloor2, title: "Industrijski pod - Skladište", category: "Podovi" },
-  { src: galleryInsulation1, title: "Termoizolacija zida", category: "Izolacija" },
+  { src: galleryInsulation1, title: "Industrijski pod", category: "Podovi" },
   { src: galleryRoof1, title: "Ravni krov - Završen", category: "Krovovi" },
   { src: afterRoof, title: "Hidroizolacija krova", category: "Krovovi" },
 ];
