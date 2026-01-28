@@ -9,6 +9,10 @@ import galleryInsulation1 from "@/assets/gallery-insulation-1.jpg";
 import galleryRoof1 from "@/assets/gallery-roof-1.jpg";
 import beforeRoof from "@/assets/before-roof.jpg";
 import afterRoof from "@/assets/after-roof.jpg";
+import beforeFloor from "@/assets/before-floor.jpg";
+import afterFloor from "@/assets/after-floor.jpg";
+import beforeGutter from "@/assets/before-gutter.jpg";
+import afterGutter from "@/assets/after-gutter.jpg";
 
 interface BeforeAfterItem {
   before: string;
@@ -27,6 +31,16 @@ const beforeAfterItems: BeforeAfterItem[] = [
     before: beforeRoof,
     after: afterRoof,
     title: "Hidroizolacija krova"
+  },
+  {
+    before: beforeFloor,
+    after: afterFloor,
+    title: "Industrijski pod"
+  },
+  {
+    before: beforeGutter,
+    after: afterGutter,
+    title: "Oluk i spojevi"
   }
 ];
 
