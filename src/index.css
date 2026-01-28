@@ -17,9 +17,9 @@
     --popover-foreground: 0 0% 95%;
 
     /* Purple brand accent */
-    --primary: 270 60% 55%;
+    --primary: 270 75% 58%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 270 70% 65%;
+    --primary-glow: 270 85% 68%;
 
     --secondary: 220 15% 18%;
     --secondary-foreground: 0 0% 90%;
@@ -27,7 +27,7 @@
     --muted: 220 15% 20%;
     --muted-foreground: 220 10% 55%;
 
-    --accent: 270 50% 50%;
+    --accent: 270 70% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
