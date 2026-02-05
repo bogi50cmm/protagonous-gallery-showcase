@@ -1,26 +1,22 @@
-import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export default async function handler(
-  req: VercelRequest,
-  res: VercelResponse
-) {
-  if (req.method !== "POST") {
-    return res.status(405).json({ message: "Method not allowed" });
-  }
-
-  const { name, email, message } = req.body;
+export async function POST(req: Request) {
+  const body = await req.json();
+  const { name, email, message } = body;
 
   if (!name || !email || !message) {
-    return res.status(400).json({ message: "Nedostaju podaci" });
+    return new Response(
+      JSON.stringify({ message: "Nedostaju podaci" }),
+      { status: 400 }
+    );
   }
 
   try {
     await resend.emails.send({
       from: "Kontakt forma <onboarding@resend.dev>",
-      to: ["malici125@gmail.com"], // TVOJ EMAIL
+      to: ["malici125@gmail.com"],
       subject: "Nova poruka sa sajta",
       html: `
         <h2>Nova poruka</h2>
@@ -31,9 +27,14 @@ export default async function handler(
       `,
     });
 
-    return res.status(200).json({ success: true });
-  } catch (error) {
-    console.error(error);
-    return res.status(500).json({ message: "Email nije poslat" });
+    return new Response(JSON.stringify({ success: true }), {
+      status: 200,
+    });
+  } catch (err) {
+    console.error(err);
+    return new Response(
+      JSON.stringify({ message: "Greška pri slanju emaila" }),
+      { status: 500 }
+    );
   }
 }

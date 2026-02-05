@@ -100,7 +100,7 @@ const ContactForm = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="Ime"
+              placeholder="Vaše ime"
               required
               className="w-full px-4 py-3 bg-card border border-border rounded-lg
 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
@@ -111,7 +111,7 @@ focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Email"
+              placeholder="Vaš Email"
               required
               className="w-full px-4 py-3 bg-card border border-border rounded-lg
 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
@@ -122,7 +122,7 @@ focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
               value={formData.message}
               onChange={handleChange}
               rows={5}
-              placeholder="Poruka"
+              placeholder="Vaša poruka..."
               required
               className="w-full px-4 py-3 bg-card border border-border rounded-lg
 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
