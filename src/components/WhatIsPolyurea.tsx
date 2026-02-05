@@ -19,7 +19,7 @@ const benefits = [
   {
     icon: Droplets,
     title: "Otpornost na vlagu",
-    description: "Može se nanositi na vlažne površine bez gubitka adhezije."
+    description: "Površine pod poliureom imaju 100% zaštitu od vlage."
   },
   {
     icon: Sun,

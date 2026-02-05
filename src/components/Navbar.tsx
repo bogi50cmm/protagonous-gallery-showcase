@@ -9,7 +9,7 @@ const Navbar = () => {
     name: "Početna",
     path: "/"
   }, {
-    name: "Galerija",
+    name: "Reference",
     path: "/galerija"
   }];
   const scrollToContact = () => {
