@@ -20,7 +20,7 @@ export default async function handler(
   try {
     await resend.emails.send({
       from: "Kontakt forma <noreply@protagonous.com>",
-      to: ["malici125@gmail.com", "bogdansolaja66@email.com"],
+      to: ["malici125@gmail.com", "bogdansolaja66@gmail.com"],
       subject: `Nova poruka od ${name}`,
       html: `
         <h2>Nova poruka sa sajta</h2>
